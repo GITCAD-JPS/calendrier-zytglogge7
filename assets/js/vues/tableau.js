@@ -2,39 +2,52 @@
 //
 // C'est la vue que toute l'équipe reconnaîtra, parce qu'elle a la forme du
 // mail : une ligne par match, une colonne par joueur, les signes x, e et 0, et
-// les trois lignes de totaux en bas. La différence tient en un geste : toucher
-// une case fait tourner le statut.
+// les trois lignes de totaux en bas. La différence tient en un geste : chaque
+// case porte une liste déroulante qui annonce la disponibilité.
 
 import { entete, libelleStatut } from '../composants.js';
-import { el, vider } from '../dom.js';
+import { el, selection, vider } from '../dom.js';
 import { formaterDateCourte, formaterJourAbrege, t } from '../langue.js';
 import {
-  CHAMPIONNATS, SIGNES, statutDe, totauxChampionnat, totauxJoueur, trierParDate,
+  CHAMPIONNATS, SIGNES, STATUTS, statutDe, totauxChampionnat, totauxJoueur, trierParDate,
 } from '../model.js';
 import * as store from '../store.js';
 
-/** Une case du tableau : le signe du statut, et de quoi le faire tourner. */
+/**
+ * Une case du tableau : le signe du statut, et une liste pour en changer.
+ *
+ * La liste est une vraie liste déroulante, rendue invisible et étalée sur
+ * toute la case. Le signe coloré reste seul à l'écran — une case fait quarante
+ * pixels, elle ne tiendrait pas « Remplaçant » — mais c'est bien la liste
+ * qu'on touche, et le téléphone ouvre son propre sélecteur avec les trois
+ * choix en toutes lettres.
+ *
+ * Elle remplace un bouton qui faisait tourner les statuts. Tourner obligeait à
+ * deviner l'ordre, et à taper deux fois pour passer de « joue » à « ne peut
+ * pas ». Ici les trois choix se voient et s'atteignent d'un geste.
+ */
 function case_(match, joueur, { modifiable }) {
   const statut = statutDe(store.index(), match.id, joueur.id);
-  const contenu = SIGNES[statut];
+  const signe = el('span', { class: 'case-signe', text: SIGNES[statut] });
 
-  if (!modifiable) {
-    return el('td', { class: `case case-${statut}` }, [
-      el('span', { class: 'case-signe', text: contenu }),
-    ]);
-  }
+  if (!modifiable) return el('td', { class: `case case-${statut}` }, [signe]);
 
-  return el('td', { class: `case case-${statut}` }, [
-    el('button', {
-      type: 'button',
-      class: 'case-bouton',
+  const liste = selection(
+    STATUTS.map((valeur) => ({
+      valeur,
+      libelle: `${SIGNES[valeur]}   ${libelleStatut(valeur)}`,
+    })),
+    statut,
+    {
+      class: 'case-choix',
       title: `${joueur.nom} — ${libelleStatut(statut)}`,
-      'aria-label': `${joueur.abrege}, ${formaterDateCourte(match.date)}, ${libelleStatut(statut)}`,
-      text: contenu,
+      'aria-label': `${joueur.abrege}, ${formaterDateCourte(match.date)}`,
       dataset: { focus: `case:${match.id}:${joueur.id}` },
-      onclick: () => store.tournerStatut(match.id, joueur.id),
-    }),
-  ]);
+      onchange: (evenement) => store.definirStatut(match.id, joueur.id, evenement.target.value),
+    },
+  );
+
+  return el('td', { class: `case case-${statut}` }, [signe, liste]);
 }
 
 /**
