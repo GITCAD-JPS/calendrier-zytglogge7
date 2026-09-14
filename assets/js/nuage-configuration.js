@@ -13,8 +13,8 @@
 // Pour les remplir, voir « Activer le partage » dans le README.
 
 export const CONFIGURATION = {
-  projet: '',
-  cle: '',
+  projet: 'zytglogge7',
+  cle: 'AIzaSyByYLoJWKzo6cNekxhdcohuNO2k41oLFVY',
   // Séparée pour qu'un banc d'essai puisse viser une base locale, et parce
   // qu'un service qui change d'adresse ne doit pas obliger à toucher au code.
   racine: 'https://firestore.googleapis.com/v1',
