@@ -1,6 +1,6 @@
 // Point d'entrée : routage par ancre, barre de navigation, montage des vues.
 
-import { $, el, icone, message, vider } from './dom.js';
+import { $, ajouter, el, icone, message, vider } from './dom.js';
 import { definirLangue, t } from './langue.js';
 import * as store from './store.js';
 import { appliquerTheme, suivreSysteme } from './theme.js';
@@ -177,7 +177,38 @@ function appliquerLangueEtTheme() {
   definirLangue(langue);
   majEntete();
   construireNavigation();
+  retraduireBandeaux();
 }
+
+/**
+ * Les bandeaux d'avertissement, posés une fois en haut de la page.
+ *
+ * Ils vivent hors des vues et survivent donc à leurs redessins. Ils gardent
+ * pour cela la clé de leur texte plutôt que le texte lui-même : sans elle, un
+ * bandeau né en français le resterait après un passage à l'allemand, seul
+ * élément de l'écran à ne pas suivre.
+ */
+const bandeaux = [];
+
+function ecrireBandeau(bandeau) {
+  ajouter(vider(bandeau.noeud), [
+    el('strong', { text: t(`${bandeau.cle}Titre`) }),
+    el('span', { text: t(`${bandeau.cle}Texte`) }),
+    bandeau.versReglages
+      && el('a', { class: 'bandeau-lien', href: '#/reglages', text: t('synchro.ouvrirReglages') }),
+  ]);
+}
+
+function poserBandeau(cle, { versReglages = false } = {}) {
+  const bandeau = {
+    noeud: el('div', { class: 'bandeau-alerte', role: 'status' }), cle, versReglages,
+  };
+  ecrireBandeau(bandeau);
+  bandeaux.push(bandeau);
+  document.body.prepend(bandeau.noeud);
+}
+
+const retraduireBandeaux = () => bandeaux.forEach(ecrireBandeau);
 
 /**
  * Certains navigateurs refusent de garder quoi que ce soit à une page
@@ -186,10 +217,7 @@ function appliquerLangueEtTheme() {
  */
 function avertirSiStockageRefuse() {
   if (store.stockageDurable()) return;
-  document.body.prepend(el('div', { class: 'bandeau-alerte', role: 'status' }, [
-    el('strong', { text: t('synchro.stockageTitre') }),
-    el('span', { text: t('synchro.stockageTexte') }),
-  ]));
+  poserBandeau('synchro.stockage');
 }
 
 /**
@@ -207,11 +235,7 @@ function surveillerLePartage() {
     const cas = CAS[store.etatPartage()];
     if (annonce || !cas) return;
     annonce = true;
-    document.body.prepend(el('div', { class: 'bandeau-alerte', role: 'status' }, [
-      el('strong', { text: t(`${cas}Titre`) }),
-      el('span', { text: t(`${cas}Texte`) }),
-      el('a', { class: 'bandeau-lien', href: '#/reglages', text: t('synchro.ouvrirReglages') }),
-    ]));
+    poserBandeau(cas, { versReglages: true });
   };
   store.abonner(verifier);
   verifier();
