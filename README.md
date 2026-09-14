@@ -1,5 +1,7 @@
 # Calendrier Zytglogge 7
 
+**→ [Ouvrir l'application](https://gitcad-jps.github.io/calendrier-zytglogge7/)**
+
 Application web pour le calendrier de présence du **CC Zytglogge 7**, saison
 2026/27, groupe BCM C1. Elle reprend le tableau que Sébastien Cettou envoie
 chaque année et le rend vivant : chacun annonce ses disponibilités depuis son
@@ -57,16 +59,20 @@ n'y a rien à dire.
 ## Utiliser l'application
 
 Le site est publié sur GitHub Pages par `.github/workflows/pages.yml`, à chaque
-poussée. Sur le téléphone, ouvrir l'adresse puis « Ajouter à l'écran
-d'accueil » installe l'application comme une application native, avec son
-icône. Une fois ouverte, elle reste consultable sans réseau.
+poussée :
 
-### Activer la publication, une fois pour toutes
+**https://gitcad-jps.github.io/calendrier-zytglogge7/**
 
-Créer un site GitHub Pages exige les droits d'administration du dépôt, que
-GitHub ne donne jamais au jeton automatique des workflows. Cette étape ne peut
-donc pas être automatisée : dans **Settings → Pages → Source**, choisir
-**GitHub Actions**. Le workflow prend ensuite le relais et republie seul.
+Sur le téléphone, ouvrir cette adresse puis « Ajouter à l'écran d'accueil »
+installe l'application comme une application native, avec son icône. Une fois
+ouverte, elle reste consultable sans réseau.
+
+### La publication est activée
+
+Elle a demandé une étape manuelle, faite une fois pour toutes : dans
+**Settings → Pages → Source**, choisir **GitHub Actions**. Créer un site Pages
+exige les droits d'administration du dépôt, que GitHub ne donne jamais au
+jeton automatique des workflows. Le workflow republie seul depuis.
 
 ### En local
 
