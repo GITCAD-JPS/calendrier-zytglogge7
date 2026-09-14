@@ -37,6 +37,11 @@ jobs:
 
       - name: Configurer Pages
         uses: actions/configure-pages@v5
+        with:
+          # Tente de créer le site Pages si le dépôt n'en a pas encore. Cela
+          # échoue quand le jeton du workflow n'a pas les droits nécessaires,
+          # et il faut alors passer une fois par Settings → Pages → Source.
+          enablement: true
 
       - name: Préparer le site
         uses: actions/upload-pages-artifact@v3
