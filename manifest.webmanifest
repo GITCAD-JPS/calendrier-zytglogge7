@@ -1,0 +1,19 @@
+{
+  "name": "Calendrier Zytglogge 7",
+  "short_name": "Zytglogge 7",
+  "description": "Calendrier de présence du CC Zytglogge 7 : les matchs de la saison et les disponibilités de chacun.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./index.html#/calendrier",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f2f6f9",
+  "theme_color": "#1f5f8b",
+  "icons": [
+    { "src": "assets/icons/icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icons/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

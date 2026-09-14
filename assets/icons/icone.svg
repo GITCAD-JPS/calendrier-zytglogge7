@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pierre de curling">
+  <defs>
+    <linearGradient id="glace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d7fb2"/>
+      <stop offset="1" stop-color="#17516f"/>
+    </linearGradient>
+    <linearGradient id="granit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fa3b4"/>
+      <stop offset="1" stop-color="#4c6070"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="108" fill="url(#glace)"/>
+
+  <!-- La maison, les deux cercles de la cible -->
+  <circle cx="256" cy="300" r="150" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="16"/>
+  <circle cx="256" cy="300" r="88" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="16"/>
+
+  <!-- La pierre -->
+  <ellipse cx="256" cy="330" rx="132" ry="66" fill="#33454f" opacity=".35"/>
+  <path d="M124 312a132 60 0 0 1 264 0v14a132 60 0 0 1-264 0z" fill="#3c4d59"/>
+  <ellipse cx="256" cy="312" rx="132" ry="60" fill="url(#granit)"/>
+  <ellipse cx="256" cy="306" rx="96" ry="40" fill="#b6c4d0" opacity=".55"/>
+
+  <!-- La poignée -->
+  <path d="M210 268v-34a46 46 0 0 1 46-46h16a34 34 0 0 1 34 34v10"
+        fill="none" stroke="#e8453c" stroke-width="26" stroke-linecap="round"/>
+  <ellipse cx="256" cy="270" rx="52" ry="20" fill="#c9372f"/>
+</svg>
