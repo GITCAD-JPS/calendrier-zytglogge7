@@ -560,20 +560,36 @@ a { color: inherit; }
 
 .tableau-saison .case { padding: 0; }
 
-.case-bouton {
+/* Le signe reste seul à l'écran, la liste déroulante est étalée par-dessus,
+   invisible mais bien celle qu'on touche. Une case fait quarante pixels, elle
+   ne tiendrait pas « Remplaçant » — le sélecteur du téléphone, lui, affiche
+   les trois choix en toutes lettres. */
+.tableau-saison .case { position: relative; }
+
+.case-choix {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  min-width: 44px;
-  min-height: 42px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   border: none;
-  background: transparent;
+  opacity: 0;
+  appearance: none;
   font: inherit;
-  font-size: .92rem;
-  font-weight: 700;
   cursor: pointer;
-  color: inherit;
 }
 
-.case-signe { display: inline-block; min-width: 44px; line-height: 42px; font-weight: 700; }
+.case-signe {
+  display: block;
+  min-width: 44px;
+  line-height: 42px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* La liste étant invisible, c'est la case qui porte la marque du clavier. */
+.case:focus-within { outline: 2px solid var(--accent); outline-offset: -2px; }
 
 .case-joue { background: var(--joue-fond); color: var(--joue); }
 .case-remplacant { background: var(--remplacant-fond); color: var(--remplacant); }

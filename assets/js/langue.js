@@ -75,7 +75,7 @@ const TEXTES = {
     'tableau.adversaire': 'Adversaire',
     'tableau.total': 'Total',
     'tableau.legende': 'x joue · e remplaçant · 0 ne peut pas',
-    'tableau.aide': 'Touchez une case pour changer un statut.',
+    'tableau.aide': 'Touchez une case et choisissez dans la liste.',
 
     'saison.titre': 'Ma saison',
     'saison.qui': 'Qui êtes-vous ?',
@@ -216,7 +216,7 @@ const TEXTES = {
     'tableau.adversaire': 'Gegner',
     'tableau.total': 'Total',
     'tableau.legende': 'x spielt · e Ersatz · 0 kann nicht spielen',
-    'tableau.aide': 'Auf ein Feld tippen, um den Status zu ändern.',
+    'tableau.aide': 'Auf ein Feld tippen und in der Liste wählen.',
 
     'saison.titre': 'Meine Saison',
     'saison.qui': 'Wer sind Sie?',
