@@ -1,0 +1,1408 @@
+{
+  "version": 1,
+  "saison": "2026/27",
+  "groupe": "BCM Gr. C1",
+  "equipe": "CC Zytglogge 7",
+  "joueurs": [
+    {
+      "id": "peter-w",
+      "abrege": "Peter W",
+      "ordre": 1,
+      "nom": "Peter Wyss",
+      "telephone": "078 919 31 62",
+      "courriel": "wyss.peter@rubigen.ch"
+    },
+    {
+      "id": "sebu",
+      "abrege": "Sebu",
+      "ordre": 2,
+      "nom": "Sébastien Cettou",
+      "telephone": "079 220 37 65",
+      "courriel": "sebastien.cettou@bluewin.ch"
+    },
+    {
+      "id": "peter-a",
+      "abrege": "Peter A",
+      "ordre": 3,
+      "nom": "Peter Antenen",
+      "telephone": "079 244 98 00",
+      "courriel": "p.antenen@bluewin.ch"
+    },
+    {
+      "id": "frank",
+      "abrege": "Frank",
+      "ordre": 4,
+      "nom": "Frank Wettstein",
+      "telephone": "079 481 36 18",
+      "courriel": "fwettstein@bluewin.ch"
+    },
+    {
+      "id": "patricia",
+      "abrege": "Patricia",
+      "ordre": 5,
+      "nom": "Patricia Wettstein-Mürner",
+      "telephone": "079 551 41 53",
+      "courriel": "pnwm@bluewin.ch"
+    },
+    {
+      "id": "manuel",
+      "abrege": "Manuel",
+      "ordre": 6,
+      "nom": "Manuel Gfeller",
+      "telephone": "079 287 97 16",
+      "courriel": "manuel.gfeller@hispeed.ch"
+    },
+    {
+      "id": "luc",
+      "abrege": "Luc",
+      "ordre": 7,
+      "nom": "Luc Meier",
+      "telephone": "079 652 44 06",
+      "courriel": "luc.meier@bluewin.ch"
+    },
+    {
+      "id": "jp",
+      "abrege": "JP",
+      "ordre": 8,
+      "nom": "Jean-Philippe Suter",
+      "telephone": "079 209 44 37",
+      "courriel": "jean-philippe@git-cad.ch"
+    }
+  ],
+  "matchs": [
+    {
+      "id": "m01",
+      "ordre": 1,
+      "date": "2026-10-07",
+      "heure": "18:30",
+      "rink": "5",
+      "championnat": "CM",
+      "adversaire": "Zimmermann",
+      "scb": false
+    },
+    {
+      "id": "m02",
+      "ordre": 2,
+      "date": "2026-10-15",
+      "heure": "20:00",
+      "rink": "4",
+      "championnat": "BCM",
+      "adversaire": "Zytglogge 5",
+      "scb": false
+    },
+    {
+      "id": "m03",
+      "ordre": 3,
+      "date": "2026-10-19",
+      "heure": "20:00",
+      "rink": "4",
+      "championnat": "BCM",
+      "adversaire": "Zytglogge 11",
+      "scb": false
+    },
+    {
+      "id": "m04",
+      "ordre": 4,
+      "date": "2026-10-21",
+      "heure": "18:30",
+      "rink": "6",
+      "championnat": "CM",
+      "adversaire": "Bühlmann-Epple",
+      "scb": false
+    },
+    {
+      "id": "m05",
+      "ordre": 5,
+      "date": "2026-10-29",
+      "heure": "20:00",
+      "rink": "4",
+      "championnat": "BCM",
+      "adversaire": "Bern 6",
+      "scb": false
+    },
+    {
+      "id": "m06",
+      "ordre": 6,
+      "date": "2026-11-02",
+      "heure": "20:00",
+      "rink": "3",
+      "championnat": "BCM",
+      "adversaire": "Junioren",
+      "scb": false
+    },
+    {
+      "id": "m07",
+      "ordre": 7,
+      "date": "2026-11-11",
+      "heure": "18:30",
+      "rink": "5",
+      "championnat": "CM",
+      "adversaire": "Veteranen",
+      "scb": false
+    },
+    {
+      "id": "m08",
+      "ordre": 8,
+      "date": "2026-11-18",
+      "heure": "18:30",
+      "rink": "6",
+      "championnat": "CM",
+      "adversaire": "Brönnimann",
+      "scb": false
+    },
+    {
+      "id": "m09",
+      "ordre": 9,
+      "date": "2026-11-21",
+      "heure": "11:15",
+      "rink": "6",
+      "championnat": "BCM",
+      "adversaire": "Inter 7",
+      "scb": false
+    },
+    {
+      "id": "m10",
+      "ordre": 10,
+      "date": "2026-12-03",
+      "heure": "20:00",
+      "rink": "3",
+      "championnat": "BCM",
+      "adversaire": "Rolling Stones",
+      "scb": false
+    },
+    {
+      "id": "m11",
+      "ordre": 11,
+      "date": "2027-01-07",
+      "heure": "20:00",
+      "rink": "3",
+      "championnat": "BCM",
+      "adversaire": "Crystal-City 9",
+      "scb": false
+    },
+    {
+      "id": "m12",
+      "ordre": 12,
+      "date": "2027-01-13",
+      "heure": "18:30",
+      "rink": "6",
+      "championnat": "CM",
+      "adversaire": "Blaser",
+      "scb": false
+    },
+    {
+      "id": "m13",
+      "ordre": 13,
+      "date": "2027-01-25",
+      "heure": "20:00",
+      "rink": "3",
+      "championnat": "BCM",
+      "adversaire": "BCG 1",
+      "scb": false
+    },
+    {
+      "id": "m14",
+      "ordre": 14,
+      "date": "2027-02-02",
+      "heure": "20:00",
+      "rink": "4",
+      "championnat": "BCM",
+      "adversaire": "Capitals 9",
+      "scb": false
+    },
+    {
+      "id": "m15",
+      "ordre": 15,
+      "date": "2027-02-17",
+      "heure": "18:30",
+      "rink": "6",
+      "championnat": "CM",
+      "adversaire": "Bühlmann",
+      "scb": false
+    },
+    {
+      "id": "m16",
+      "ordre": 16,
+      "date": "2027-02-24",
+      "heure": "18:30",
+      "rink": "5",
+      "championnat": "CM",
+      "adversaire": "Jaun",
+      "scb": false
+    },
+    {
+      "id": "m17",
+      "ordre": 17,
+      "date": "2027-03-01",
+      "heure": "20:00",
+      "rink": "4",
+      "championnat": "BCM",
+      "adversaire": "Aare 2",
+      "scb": false
+    },
+    {
+      "id": "m18",
+      "ordre": 18,
+      "date": "2027-03-03",
+      "heure": "18:30",
+      "rink": "",
+      "championnat": "CM",
+      "adversaire": "Finalrunde",
+      "scb": false
+    }
+  ],
+  "presences": [
+    {
+      "id": "m01__peter-w",
+      "matchId": "m01",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__sebu",
+      "matchId": "m01",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__peter-a",
+      "matchId": "m01",
+      "joueurId": "peter-a",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__frank",
+      "matchId": "m01",
+      "joueurId": "frank",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__patricia",
+      "matchId": "m01",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__manuel",
+      "matchId": "m01",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__luc",
+      "matchId": "m01",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m01__jp",
+      "matchId": "m01",
+      "joueurId": "jp",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__peter-w",
+      "matchId": "m02",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__sebu",
+      "matchId": "m02",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__peter-a",
+      "matchId": "m02",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__frank",
+      "matchId": "m02",
+      "joueurId": "frank",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__patricia",
+      "matchId": "m02",
+      "joueurId": "patricia",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__manuel",
+      "matchId": "m02",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__luc",
+      "matchId": "m02",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m02__jp",
+      "matchId": "m02",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__peter-w",
+      "matchId": "m03",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__sebu",
+      "matchId": "m03",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__peter-a",
+      "matchId": "m03",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__frank",
+      "matchId": "m03",
+      "joueurId": "frank",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__patricia",
+      "matchId": "m03",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__manuel",
+      "matchId": "m03",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__luc",
+      "matchId": "m03",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m03__jp",
+      "matchId": "m03",
+      "joueurId": "jp",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__peter-w",
+      "matchId": "m04",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__sebu",
+      "matchId": "m04",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__peter-a",
+      "matchId": "m04",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__frank",
+      "matchId": "m04",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__patricia",
+      "matchId": "m04",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__manuel",
+      "matchId": "m04",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__luc",
+      "matchId": "m04",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m04__jp",
+      "matchId": "m04",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__peter-w",
+      "matchId": "m05",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__sebu",
+      "matchId": "m05",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__peter-a",
+      "matchId": "m05",
+      "joueurId": "peter-a",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__frank",
+      "matchId": "m05",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__patricia",
+      "matchId": "m05",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__manuel",
+      "matchId": "m05",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__luc",
+      "matchId": "m05",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m05__jp",
+      "matchId": "m05",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__peter-w",
+      "matchId": "m06",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__sebu",
+      "matchId": "m06",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__peter-a",
+      "matchId": "m06",
+      "joueurId": "peter-a",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__frank",
+      "matchId": "m06",
+      "joueurId": "frank",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__patricia",
+      "matchId": "m06",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__manuel",
+      "matchId": "m06",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__luc",
+      "matchId": "m06",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m06__jp",
+      "matchId": "m06",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__peter-w",
+      "matchId": "m07",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__sebu",
+      "matchId": "m07",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__peter-a",
+      "matchId": "m07",
+      "joueurId": "peter-a",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__frank",
+      "matchId": "m07",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__patricia",
+      "matchId": "m07",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__manuel",
+      "matchId": "m07",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__luc",
+      "matchId": "m07",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m07__jp",
+      "matchId": "m07",
+      "joueurId": "jp",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__peter-w",
+      "matchId": "m08",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__sebu",
+      "matchId": "m08",
+      "joueurId": "sebu",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__peter-a",
+      "matchId": "m08",
+      "joueurId": "peter-a",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__frank",
+      "matchId": "m08",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__patricia",
+      "matchId": "m08",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__manuel",
+      "matchId": "m08",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__luc",
+      "matchId": "m08",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m08__jp",
+      "matchId": "m08",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__peter-w",
+      "matchId": "m09",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__sebu",
+      "matchId": "m09",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__peter-a",
+      "matchId": "m09",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__frank",
+      "matchId": "m09",
+      "joueurId": "frank",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__patricia",
+      "matchId": "m09",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__manuel",
+      "matchId": "m09",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__luc",
+      "matchId": "m09",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m09__jp",
+      "matchId": "m09",
+      "joueurId": "jp",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__peter-w",
+      "matchId": "m10",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__sebu",
+      "matchId": "m10",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__peter-a",
+      "matchId": "m10",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__frank",
+      "matchId": "m10",
+      "joueurId": "frank",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__patricia",
+      "matchId": "m10",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__manuel",
+      "matchId": "m10",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__luc",
+      "matchId": "m10",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m10__jp",
+      "matchId": "m10",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__peter-w",
+      "matchId": "m11",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__sebu",
+      "matchId": "m11",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__peter-a",
+      "matchId": "m11",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__frank",
+      "matchId": "m11",
+      "joueurId": "frank",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__patricia",
+      "matchId": "m11",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__manuel",
+      "matchId": "m11",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__luc",
+      "matchId": "m11",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m11__jp",
+      "matchId": "m11",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__peter-w",
+      "matchId": "m12",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__sebu",
+      "matchId": "m12",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__peter-a",
+      "matchId": "m12",
+      "joueurId": "peter-a",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__frank",
+      "matchId": "m12",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__patricia",
+      "matchId": "m12",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__manuel",
+      "matchId": "m12",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__luc",
+      "matchId": "m12",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m12__jp",
+      "matchId": "m12",
+      "joueurId": "jp",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__peter-w",
+      "matchId": "m13",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__sebu",
+      "matchId": "m13",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__peter-a",
+      "matchId": "m13",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__frank",
+      "matchId": "m13",
+      "joueurId": "frank",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__patricia",
+      "matchId": "m13",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__manuel",
+      "matchId": "m13",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__luc",
+      "matchId": "m13",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m13__jp",
+      "matchId": "m13",
+      "joueurId": "jp",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__peter-w",
+      "matchId": "m14",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__sebu",
+      "matchId": "m14",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__peter-a",
+      "matchId": "m14",
+      "joueurId": "peter-a",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__frank",
+      "matchId": "m14",
+      "joueurId": "frank",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__patricia",
+      "matchId": "m14",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__manuel",
+      "matchId": "m14",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__luc",
+      "matchId": "m14",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m14__jp",
+      "matchId": "m14",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__peter-w",
+      "matchId": "m15",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__sebu",
+      "matchId": "m15",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__peter-a",
+      "matchId": "m15",
+      "joueurId": "peter-a",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__frank",
+      "matchId": "m15",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__patricia",
+      "matchId": "m15",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__manuel",
+      "matchId": "m15",
+      "joueurId": "manuel",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__luc",
+      "matchId": "m15",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m15__jp",
+      "matchId": "m15",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__peter-w",
+      "matchId": "m16",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__sebu",
+      "matchId": "m16",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__peter-a",
+      "matchId": "m16",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__frank",
+      "matchId": "m16",
+      "joueurId": "frank",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__patricia",
+      "matchId": "m16",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__manuel",
+      "matchId": "m16",
+      "joueurId": "manuel",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__luc",
+      "matchId": "m16",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m16__jp",
+      "matchId": "m16",
+      "joueurId": "jp",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__peter-w",
+      "matchId": "m17",
+      "joueurId": "peter-w",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__sebu",
+      "matchId": "m17",
+      "joueurId": "sebu",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__peter-a",
+      "matchId": "m17",
+      "joueurId": "peter-a",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__frank",
+      "matchId": "m17",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__patricia",
+      "matchId": "m17",
+      "joueurId": "patricia",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__manuel",
+      "matchId": "m17",
+      "joueurId": "manuel",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__luc",
+      "matchId": "m17",
+      "joueurId": "luc",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m17__jp",
+      "matchId": "m17",
+      "joueurId": "jp",
+      "statut": "absent",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__peter-w",
+      "matchId": "m18",
+      "joueurId": "peter-w",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__sebu",
+      "matchId": "m18",
+      "joueurId": "sebu",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__peter-a",
+      "matchId": "m18",
+      "joueurId": "peter-a",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__frank",
+      "matchId": "m18",
+      "joueurId": "frank",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__patricia",
+      "matchId": "m18",
+      "joueurId": "patricia",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__manuel",
+      "matchId": "m18",
+      "joueurId": "manuel",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__luc",
+      "matchId": "m18",
+      "joueurId": "luc",
+      "statut": "joue",
+      "modifieLe": "",
+      "modifiePar": ""
+    },
+    {
+      "id": "m18__jp",
+      "matchId": "m18",
+      "joueurId": "jp",
+      "statut": "remplacant",
+      "modifieLe": "",
+      "modifiePar": ""
+    }
+  ]
+}
