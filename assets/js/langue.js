@@ -18,7 +18,6 @@ const TEXTES = {
     'app.nom': 'Zytglogge 7',
     'app.titre': 'Calendrier Zytglogge 7',
     'app.saison': 'Saison {saison}',
-    'app.chargement': 'Chargement du calendrier…',
     'app.erreurTitre': 'Chargement impossible',
     'app.erreurTexte': "Le calendrier n'a pas pu être lu. Ouvrez l'application depuis "
       + 'un serveur web plutôt que directement depuis le fichier.',
@@ -37,7 +36,6 @@ const TEXTES = {
     'statut.remplacant.moi': 'Remplaçant',
     'statut.absent.moi': 'Je ne peux pas',
 
-    'match.titre': 'Match du {date}',
     'match.contre': 'contre {adversaire}',
     'match.rink': 'Piste {rink}',
     'match.rinkInconnu': 'Piste à confirmer',
@@ -49,7 +47,6 @@ const TEXTES = {
     'match.surnombrePluriel': '{n} joueurs de trop',
     'match.titulaires': 'Sur la glace',
     'match.remplacants': 'Remplaçants',
-    'match.absents': 'Ne peuvent pas',
     'match.aucunRemplacant': 'Aucun remplaçant disponible, il faut appeler quelqu’un',
     'match.remplacantsDisponibles': 'À appeler en priorité',
     'match.modifiePar': 'par {nom}, {date}',
@@ -84,9 +81,8 @@ const TEXTES = {
     'saison.joue': 'Matchs joués',
     'saison.remplacant': 'Comme remplaçant',
     'saison.absent': 'Indisponible',
-    'saison.prochain': 'Mon prochain match',
+    'saison.prochain': 'Mes matchs à venir',
     'saison.aucunProchain': 'Plus aucun match à venir pour vous.',
-    'saison.repartition': 'Dix matchs BCM et huit CM cette saison',
 
     'equipe.titre': 'L’équipe',
     'equipe.matchs': '{n} matchs',
@@ -159,7 +155,6 @@ const TEXTES = {
     'app.nom': 'Zytglogge 7',
     'app.titre': 'Spielplan Zytglogge 7',
     'app.saison': 'Saison {saison}',
-    'app.chargement': 'Spielplan wird geladen…',
     'app.erreurTitre': 'Laden nicht möglich',
     'app.erreurTexte': 'Der Spielplan konnte nicht gelesen werden. Öffnen Sie die App '
       + 'über einen Webserver und nicht direkt aus der Datei.',
@@ -178,7 +173,6 @@ const TEXTES = {
     'statut.remplacant.moi': 'Ersatz',
     'statut.absent.moi': 'Ich kann nicht',
 
-    'match.titre': 'Spiel vom {date}',
     'match.contre': 'gegen {adversaire}',
     'match.rink': 'Rink {rink}',
     'match.rinkInconnu': 'Rink noch offen',
@@ -190,7 +184,6 @@ const TEXTES = {
     'match.surnombrePluriel': '{n} Spieler zu viel',
     'match.titulaires': 'Auf dem Eis',
     'match.remplacants': 'Ersatz',
-    'match.absents': 'Können nicht',
     'match.aucunRemplacant': 'Kein Ersatz verfügbar, jemand muss angerufen werden',
     'match.remplacantsDisponibles': 'Zuerst anrufen',
     'match.modifiePar': 'von {nom}, {date}',
@@ -225,9 +218,8 @@ const TEXTES = {
     'saison.joue': 'Gespielte Spiele',
     'saison.remplacant': 'Als Ersatz',
     'saison.absent': 'Nicht verfügbar',
-    'saison.prochain': 'Mein nächstes Spiel',
+    'saison.prochain': 'Meine kommenden Spiele',
     'saison.aucunProchain': 'Für Sie stehen keine Spiele mehr an.',
-    'saison.repartition': 'Zehn BCM- und acht CM-Spiele in dieser Saison',
 
     'equipe.titre': 'Das Team',
     'equipe.matchs': '{n} Spiele',

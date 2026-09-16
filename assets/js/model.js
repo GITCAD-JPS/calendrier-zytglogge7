@@ -15,7 +15,22 @@ export const TITULAIRES_ATTENDUS = 4;
 
 export const CHAMPIONNATS = ['BCM', 'CM'];
 
-export const aujourdhui = () => new Date().toISOString().slice(0, 10);
+/**
+ * La date du jour, telle que la lit une horloge suisse.
+ *
+ * `toISOString()` rend la date UTC, en retard d'une à deux heures sur Berne.
+ * Entre minuit et deux heures du matin, l'application vivait donc la veille :
+ * un match du soir même s'annonçait « Demain », et celui de la veille restait
+ * dans les matchs à venir.
+ */
+export function aujourdhui() {
+  const maintenant_ = new Date();
+  return [
+    maintenant_.getFullYear(),
+    String(maintenant_.getMonth() + 1).padStart(2, '0'),
+    String(maintenant_.getDate()).padStart(2, '0'),
+  ].join('-');
+}
 
 export const maintenant = () => new Date().toISOString();
 

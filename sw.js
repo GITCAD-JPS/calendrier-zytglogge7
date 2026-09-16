@@ -2,7 +2,7 @@
    patinoire. Changez VERSION à chaque modification des fichiers pour forcer la
    mise à jour des téléphones déjà visités. */
 
-const VERSION = 'zytglogge7-v3';
+const VERSION = 'zytglogge7-v4';
 
 const COQUILLE = [
   './',
