@@ -4,7 +4,7 @@ import { bouton, el, icone } from './dom.js';
 import {
   formaterInstant, formaterJourEtDate, t, tn,
 } from './langue.js';
-import { effectif, joursAvant, SIGNES, STATUTS } from './model.js';
+import { effectif, joursAvant, SIGNES, statutDe, STATUTS } from './model.js';
 import * as store from './store.js';
 
 /** Le libellé d'un statut, à la troisième personne ou à la première. */
@@ -85,7 +85,7 @@ export function carteMatch(match, { naviguer, avecBoutons = true }) {
   const compte = effectif(store.index(), match, store.joueurs());
   const etat = etatEffectif(compte);
   const moi = store.moi();
-  const monStatut = moi ? store.index().get(match.id)?.get(moi.id)?.statut : null;
+  const monStatut = moi ? statutDe(store.index(), match.id, moi.id) : null;
   const echeance = quand(match);
 
   const carte = el('article', {

@@ -17,7 +17,7 @@ export const VERSION_DONNEES = 1;
 // Affichée dans les réglages : sans elle, impossible de savoir à distance si
 // un téléphone tourne encore sur une version gardée en cache. À faire suivre
 // avec VERSION dans sw.js.
-export const VERSION_APP = '3';
+export const VERSION_APP = '4';
 
 const etat = {
   saison: '',
@@ -109,18 +109,21 @@ function ecrireLocal(cle, valeur) {
   }
 }
 
+/** Ce que le navigateur garde d'une visite à l'autre. */
+const paquetLocal = () => ({
+  version: VERSION_DONNEES,
+  majLe: etat.majLe,
+  saison: etat.saison,
+  groupe: etat.groupe,
+  equipe: etat.equipe,
+  joueurs: etat.joueurs,
+  matchs: etat.matchs,
+  presences: etat.presences,
+});
+
 function enregistrer() {
   etat.majLe = maintenant();
-  const ok = ecrireLocal(CLE_DONNEES, {
-    version: VERSION_DONNEES,
-    majLe: etat.majLe,
-    saison: etat.saison,
-    groupe: etat.groupe,
-    equipe: etat.equipe,
-    joueurs: etat.joueurs,
-    matchs: etat.matchs,
-    presences: etat.presences,
-  });
+  const ok = ecrireLocal(CLE_DONNEES, paquetLocal());
   notifier();
   return ok;
 }
@@ -168,33 +171,30 @@ async function lireSeed() {
   return reponse.json();
 }
 
+const NORMALISEURS = {
+  joueurs: normaliserJoueur, matchs: normaliserMatch, presences: normaliserPresence,
+};
+
 /**
- * Adopte ce que le partage rend.
+ * Adopte ce que le partage rend, les trois collections d'un coup.
  *
  * Le partage fait autorité : il a déjà fusionné ce que cet appareil avait à
  * apporter. Une collection vide est ignorée, car elle signalerait une lecture
  * partielle plutôt qu'une équipe sans joueurs, et effacerait le calendrier
  * local pour rien.
  */
-function recevoirDuPartage(collection, fiches) {
-  if (!fiches.length) return;
-  const normaliser = {
-    joueurs: normaliserJoueur, matchs: normaliserMatch, presences: normaliserPresence,
-  }[collection];
-  if (!normaliser) return;
+function recevoirDuPartage(distantes) {
+  let adopte = false;
+  for (const [collection, normaliser] of Object.entries(NORMALISEURS)) {
+    const fiches = distantes?.[collection];
+    if (!fiches?.length) continue;
+    etat[collection] = fiches.map(normaliser);
+    adopte = true;
+  }
+  if (!adopte) return;
 
-  etat[collection] = fiches.map(normaliser);
-  if (collection === 'joueurs') etat.joueurs.sort((a, b) => a.ordre - b.ordre);
-  ecrireLocal(CLE_DONNEES, {
-    version: VERSION_DONNEES,
-    majLe: etat.majLe,
-    saison: etat.saison,
-    groupe: etat.groupe,
-    equipe: etat.equipe,
-    joueurs: etat.joueurs,
-    matchs: etat.matchs,
-    presences: etat.presences,
-  });
+  etat.joueurs.sort((a, b) => a.ordre - b.ordre);
+  ecrireLocal(CLE_DONNEES, paquetLocal());
   notifier();
 }
 
@@ -231,13 +231,6 @@ export function definirStatut(matchId, joueurId, statut) {
   enregistrer();
   partage.ecrirePresence(presence);
   return presence;
-}
-
-/** Fait tourner un statut : joue → remplaçant → ne peut pas → joue. */
-export function tournerStatut(matchId, joueurId) {
-  const actuel = etat.index.get(matchId)?.get(joueurId)?.statut || 'absent';
-  const suivant = STATUTS[(STATUTS.indexOf(actuel) + 1) % STATUTS.length];
-  return definirStatut(matchId, joueurId, suivant);
 }
 
 export function modifierMatch(id, champs) {

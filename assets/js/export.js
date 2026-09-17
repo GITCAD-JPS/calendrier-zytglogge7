@@ -132,7 +132,9 @@ function evenement(match, { titre, description }) {
   const { debut, fin } = horaire(match);
   return [
     'BEGIN:VEVENT',
-    `UID:${match.id}-zytglogge7@git-cad.ch`,
+    // La date entre dans l'identifiant : sans elle, le « m01 » de la saison
+    // suivante porterait le même et remplacerait celui-ci dans l'agenda.
+    `UID:${match.date}-${match.id}-zytglogge7@git-cad.ch`,
     `DTSTAMP:${instantUtc(new Date())}`,
     `DTSTART:${instantLocal(debut)}`,
     `DTEND:${instantLocal(fin)}`,

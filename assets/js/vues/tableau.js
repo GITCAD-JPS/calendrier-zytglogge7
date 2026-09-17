@@ -9,7 +9,8 @@ import { entete, libelleStatut } from '../composants.js';
 import { el, selection, vider } from '../dom.js';
 import { formaterDateCourte, formaterJourAbrege, t } from '../langue.js';
 import {
-  CHAMPIONNATS, SIGNES, STATUTS, statutDe, totauxChampionnat, totauxJoueur, trierParDate,
+  CHAMPIONNATS, estPasse, SIGNES, STATUTS, statutDe, totauxChampionnat, totauxJoueur,
+  trierParDate,
 } from '../model.js';
 import * as store from '../store.js';
 
@@ -70,7 +71,7 @@ const celluleDate = (match) => el('th', { scope: 'row', class: 'colonne-date' },
 ]);
 
 function ligneMatch(match, joueurs) {
-  const passe = match.date < new Date().toISOString().slice(0, 10);
+  const passe = estPasse(match);
   return el('tr', { class: passe ? 'ligne-passee' : '' }, [
     celluleDate(match),
     el('td', { class: 'colonne-heure', text: match.heure }),

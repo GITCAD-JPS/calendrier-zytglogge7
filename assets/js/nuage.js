@@ -118,8 +118,10 @@ async function lireCollection(collection) {
   const fiches = [];
   let suite = '';
   do {
-    const url = `${chemin(collection)}?pageSize=300${suite ? `&pageToken=${suite}` : ''}`;
-    const paquet = await appeler(url);
+    // Le jeton vient de Firestore et contient volontiers des + / = :
+    // recopié tel quel dans l'adresse, il reviendrait déformé.
+    const page = suite ? `&pageToken=${encodeURIComponent(suite)}` : '';
+    const paquet = await appeler(`${chemin(collection)}?pageSize=300${page}`);
     fiches.push(...(paquet?.documents || []).map(depuisDocument).filter(Boolean));
     suite = paquet?.nextPageToken || '';
   } while (suite);
@@ -137,15 +139,24 @@ const ecrireFiche = (collection, fiche) => appeler(
 
 const effacerFiche = (collection, id) => appeler(chemin(collection, id), { method: 'DELETE' });
 
-/** Marque le calendrier comme modifié, pour que les autres appareils le sachent. */
-const marquerTemoin = () => appeler(
-  chemin('meta', TEMOIN),
-  {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ fields: { majLe: { stringValue: new Date().toISOString() } } }),
-  },
-).catch(() => {});
+/**
+ * Marque le calendrier comme modifié, pour que les autres appareils le sachent.
+ *
+ * Rend la marque écrite, que l'appelant retient pour ne pas se relire lui-même.
+ */
+async function marquerTemoin() {
+  const marque = new Date().toISOString();
+  try {
+    await appeler(chemin('meta', TEMOIN), {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fields: { majLe: { stringValue: marque } } }),
+    });
+    return marque;
+  } catch {
+    return null;
+  }
+}
 
 async function lireTemoin() {
   try {
@@ -223,10 +234,15 @@ const toutLire = async () => Object.fromEntries(await Promise.all(
   COLLECTIONS_PARTAGEES.map(async (nom) => [nom, await lireCollection(COLLECTIONS[nom])]),
 ));
 
-/** Relit le calendrier entier et le donne à l'application. */
+/**
+ * Relit le calendrier entier et le donne à l'application.
+ *
+ * Les trois collections partent ensemble : livrées une à une, elles
+ * redessinaient la vue trois fois, dont deux sur un état mi-ancien mi-neuf.
+ */
 async function rapatrier() {
   const distantes = await toutLire();
-  for (const nom of COLLECTIONS_PARTAGEES) rappels.onDonnees?.(nom, distantes[nom]);
+  rappels.onDonnees?.(distantes);
   dernierTemoin = await lireTemoin();
 }
 
@@ -271,7 +287,15 @@ function pousser(collection, fiche, suppression = false) {
 
   promesse
     .then(() => marquerTemoin())
-    .then(() => { dernierTemoin = null; changerEtat('connecte'); })
+    .then((marque) => {
+      // On vient d'écrire, la fiche est déjà à jour ici : retenir la marque
+      // qu'on a posée évite de retélécharger le calendrier entier huit
+      // secondes plus tard, et de redessiner la vue sous le doigt de celui
+      // qui enchaîne les annonces. Un autre appareil, lui, posera une marque
+      // différente et déclenchera bien la relecture.
+      if (marque) dernierTemoin = marque;
+      changerEtat('connecte');
+    })
     .catch((erreur) => {
       console.info('Annonce mise de côté', erreur);
       const index = enAttente.findIndex(
